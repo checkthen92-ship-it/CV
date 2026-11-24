@@ -1,0 +1,823 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Career, Our Priority | Professional CV Services</title>
+
+<meta name="description" content="Professional CV writing and credentials compilation. Give your qualifications and career journey the professional presentation they deserve.">
+
+<style>
+:root {
+    --navy: #10264A;
+    --gold: #C6A15B;
+    --white: #FFFFFF;
+    --light: #F7F8FA;
+    --text: #26364D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+header {
+    background: var(--navy);
+    padding: 18px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 105px 8%;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 62px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    max-width: 720px;
+    margin: 0 auto 32px;
+    font-size: 18px;
+    color: #E8EDF5;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    color: var(--navy);
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 42px;
+    color: #64748B;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: var(--white);
+    border: 1px solid #E2E6ED;
+    border-bottom: 4px solid var(--gold);
+    padding: 30px 24px;
+    text-align: center;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(16, 38, 74, 0.09);
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.service-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.service-card p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+.service-action {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.about {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.about h2 {
+    color: var(--white);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content p {
+    margin-top: 18px;
+    color: #E1E7F0;
+}
+
+.gold-line {
+    width: 65px;
+    height: 4px;
+    background: var(--gold);
+    margin: 20px auto 30px;
+}
+
+.motivation {
+    background: var(--light);
+}
+
+.motivation-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.motivation h2 {
+    text-align: center;
+    color: var(--navy);
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.35;
+    margin-bottom: 15px;
+}
+
+.motivation-intro {
+    text-align: center;
+    color: #64748B;
+    margin-bottom: 45px;
+}
+
+.motivation-block {
+    margin-bottom: 34px;
+}
+
+.motivation-block h3 {
+    color: var(--navy);
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.motivation-block p {
+    color: #536174;
+    margin-bottom: 12px;
+}
+
+.motivation-block strong {
+    color: var(--navy);
+}
+
+.motivation-quote {
+    border-left: 4px solid var(--gold);
+    padding: 20px 24px;
+    background: var(--white);
+    margin: 40px 0;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--navy);
+}
+
+.motivation-ending {
+    text-align: center;
+    padding: 35px 20px;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 9px;
+}
+
+.motivation-ending h3 {
+    color: var(--gold);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.motivation-ending p {
+    color: #E8EDF5;
+}
+
+.contact {
+    background: var(--white);
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--navy);
+}
+
+.contact p {
+    max-width: 650px;
+    margin: 15px auto 28px;
+    color: #64748B;
+}
+
+footer {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h3 {
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #E8EDF5;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 80px 6%;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        YOUR CAREER<span>.</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Our Service</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <h1>
+        YOUR CAREER,<br>
+        <span>OUR PRIORITY!</span>
+    </h1>
+
+    <p>
+        Professional CV Writing & Credentials Compilation.
+        Your qualifications, experience and achievements
+        deserve a presentation that reflects their true value.
+    </p>
+
+    <a href="https://wa.me/2348104300516"
+       class="btn">
+       CONTACT US
+    </a>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+    <h2 class="section-title">OUR SERVICE</h2>
+
+    <div class="gold-line"></div>
+
+    <p class="section-subtitle">
+        We help students, graduates and professionals
+        prepare and organise their career documents
+        with clarity, attention to detail and professionalism.
+    </p>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Professional CV Writing</h3>
+            <p>
+                Professionally written and designed CVs
+                that communicate your qualifications,
+                experience, skills and achievements.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3>Academic Results</h3>
+            <p>
+                Proper organisation of academic
+                qualifications, results and transcripts
+                for professional presentation.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏅</div>
+            <h3>Certificate Compilation</h3>
+            <p>
+                Neat arrangement of academic,
+                professional and training certificates
+                into an organised collection.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📁</div>
+            <h3>Credentials Organisation</h3>
+            <p>
+                Careful arrangement of supporting
+                documents into a clear and organised
+                professional portfolio.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📑</div>
+            <h3>Complete PDF Preparation</h3>
+            <p>
+                Combining your CV and relevant
+                supporting documents into a convenient,
+                professionally arranged PDF.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="service-action">
+        <a href="https://wa.me/2348104300516"
+           class="btn">
+           CONTACT US
+        </a>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <h2 class="section-title">
+            YOUR DOCUMENTS DESERVE THE BEST PRESENTATION
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+            A CV is more than a document containing your
+            educational background and work experience.
+            It is an introduction to your professional
+            identity and the value you can bring.
+        </p>
+
+        <p>
+            Your supporting credentials provide evidence
+            of your academic journey, training and
+            professional development.
+        </p>
+
+        <p>
+            Our goal is to help you bring these documents
+            together in a clear, organised and professional
+            format that is easy to review.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MOTIVATIONAL SECTION -->
+<section class="motivation">
+
+<div class="motivation-container">
+
+    <h2>
+        YOUR CAREER JOURNEY IS NOT OVER.
+        YOUR STORY IS STILL BEING WRITTEN.
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p class="motivation-intro">
+        A reminder for every student, graduate,
+        job seeker and professional who is working
+        towards a better future.
+    </p>
+
+    <div class="motivation-block">
+
+        <h3>1. YOUR CURRENT SITUATION IS NOT YOUR IDENTITY.</h3>
+
+        <p>
+            Perhaps you are currently unemployed.
+            Perhaps you have completed your education
+            but have not yet secured the opportunity
+            you have been hoping for.
+        </p>
+
+        <p>
+            Maybe you are working in a position that
+            does not reflect your qualifications,
+            or you feel that your career is progressing
+            more slowly than you expected.
+        </p>
+
+        <p>
+            Whatever your situation may be, remember
+            that it describes a stage of your journey,
+            not the full story of who you are or
+            what you are capable of becoming.
+        </p>
+
+        <p>
+            Do not allow a temporary circumstance
+            to become a permanent definition of yourself.
+        </p>
+
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>2. DO NOT MEASURE YOUR PROGRESS USING SOMEONE ELSE'S CLOCK.</h3>
+
+        <p>
+            You will meet people who appear to be
+            achieving everything earlier than you.
+            Some may secure impressive jobs,
+            earn higher salaries or reach milestones
+            you are still working towards.
+        </p>
+
+        <p>
+            It is natural to notice these differences,
+            but every individual has a different
+            background, opportunity, responsibility
+            and path.
+        </p>
+
+        <p>
+            Your responsibility is not to reproduce
+            another person's journey. It is to make
+            thoughtful decisions about your own.
+        </p>
+
+        <p>
+            Celebrate other people's progress without
+            treating it as evidence that you are behind.
+            Give yourself the opportunity to grow
+            at a pace that allows you to build properly.
+        </p>
+
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>3. REJECTION DOES NOT ERASE YOUR QUALIFICATIONS.</h3>
+
+        <p>
+            Applying for opportunities and receiving
+            disappointing responses can be discouraging.
+            It can make even a qualified person
+            question their preparation and ability.
+        </p>
+
+        <p>
+            But a hiring decision involves many factors:
+            experience requirements, available positions,
+            organisational priorities and the needs
+            of the employer at that particular time.
+        </p>
+
+        <p>
+            Review your CV. Improve how you communicate
+            your experience. Practise presenting your
+            skills and continue developing your knowledge.
+        </p>
+
+        <p>
+            Let disappointment encourage a useful review,
+            not a permanent loss of confidence.
+        </p>
+
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>4. YOUR SMALL ACHIEVEMENTS DESERVE RECOGNITION.</h3>
+
+        <p>
+            Not every achievement comes with a promotion,
+            an award or public recognition.
+            Sometimes progress is found in the work
+            nobody else notices.
+        </p>
+
+        <p>
+            It may be a project you completed,
+            a difficult responsibility you handled,
+            a new skill you learned or a problem
+            you helped solve.
+        </p>
+
+        <p>
+            Keep a record of these experiences.
+            They can help you recognise your growth
+            and communicate your contributions
+            when preparing your CV or attending interviews.
+        </p>
+
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>5. NEVER STOP INVESTING IN YOURSELF.</h3>
+
+        <p>
+            Your academic qualification is important,
+            but learning should not end when you
+            leave the classroom.
+        </p>
+
+        <p>
+            Industries change. Technology develops.
+            Professional expectations evolve.
+            The ability to learn, adapt and improve
+            remains valuable throughout your career.
+        </p>
+
+        <p>
+            Choose skills that are relevant to your goals.
+            Learn from practical experiences.
+            Ask questions. Seek guidance.
+            Give yourself time to become better.
+        </p>
+
+        <p>
+            You do not have to master everything at once.
+            Consistent improvement can create
+            meaningful opportunities over time.
+        </p>
+
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>6. PRESENT YOURSELF WITH CONFIDENCE.</h3>
+
+        <p>
+            You may have valuable knowledge,
+            meaningful experience and useful skills,
+            but employers need a clear way to understand
+            what you bring to the table.
+        </p>
+
+        <p>
+            The way you communicate your qualifications
+            matters. A well-organised CV can help
+            an employer understand your background,
+            while properly arranged credentials
+            make supporting information easier to review.
+        </p>
+
+        <p>
+            Never underestimate the importance
+            of preparing yourself properly before
+            an opportunity comes.
+        </p>
+
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>7. GIVE YOURSELF PERMISSION TO BEGIN AGAIN.</h3>
+
+        <p>
+            Sometimes the direction you originally
+            chose may no longer be the direction
+            you want to follow.
+        </p>
+
+        <p>
+            You may discover a new interest,
+            change your professional goals,
+            return to learning or decide to explore
+            a different industry.
+        </p>
+
+        <p>
+            Changing direction does not mean
+            your previous efforts were meaningless.
+            The lessons, relationships and experiences
+            you have gathered can still contribute
+            to your next chapter.
+        </p>
+
+        <p>
+            You are allowed to reassess your goals,
+            make better decisions and move forward
+            with renewed purpose.
+        </p>
+
+    </div>
+
+    <div class="motivation-quote">
+        "Do not allow one difficult chapter to convince
+        you that the entire story will have an unhappy ending.
+        There is still room to learn, improve, rebuild
+        and discover opportunities you have not yet imagined."
+    </div>
+
+    <div class="motivation-block">
+
+        <h3>8. TAKE THE NEXT STEP, EVEN IF IT IS A SMALL ONE.</h3>
+
+        <p>
+            Big career goals can sometimes feel overwhelming
+            when you look at everything that needs to happen.
+            The solution is to break the journey into
+            manageable actions.
+        </p>
+
+        <p>
+            Update your CV. Complete a course.
+            Contact a mentor. Research an industry.
+            Prepare for an interview. Apply for an opportunity.
+        </p>
+
+        <p>
+            You do not need to solve every career challenge
+            today. You need to identify a useful next step
+            and give yourself a genuine opportunity
+            to make progress.
+        </p>
+
+    </div>
+
+    <div class="motivation-ending">
+
+        <h3>YOUR FUTURE STILL HAS ROOM TO GROW.</h3>
+
+        <p>
+            Your journey may not look exactly as you
+            imagined, but that does not mean it has
+            lost its value.
+        </p>
+
+        <p>
+            Keep your goals in view. Respect your progress.
+            Learn from your experiences and continue
+            preparing for the opportunities ahead.
+        </p>
+
+        <p>
+            You have more chapters to write,
+            more knowledge to acquire and more
+            possibilities to explore.
+        </p>
+
+        <br>
+
+        <h3>YOUR CAREER, OUR PRIORITY!</h3>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="section-title">LET'S GET YOU STARTED</h2>
+
+    <p>
+        Whether you need a professionally written CV
+        or help organising your academic and professional
+        credentials, we are ready to assist.
+    </p>
+
+    <a href="https://wa.me/2348104300516?text=Hello%2C%20I%20am%20interested%20in%20your%20Professional%20CV%20Writing%20and%20Credentials%20Compilation%20service."
+       class="btn">
+       CONTACT US
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>YOUR CAREER, OUR PRIORITY!</h3>
+
+    <p>
+        Professional CV Writing & Credentials Compilation
+    </p>
+
+    <p>
+        Helping you present your professional journey
+        with confidence.
+    </p>
+
+    <p>
+        © 2026 All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
